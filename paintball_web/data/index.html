@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Scoreboard</title>
+        <style>
+            html,
+            body {
+                height: 100%;
+            }
+        </style>
+        <link href="bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Bomb Defusal</span>
+        </div>
+      </nav>
+      <div class="container p-2 h-5">
+        <h1>Team Red</h1>
+        <div class="input-group mb-3">
+          <input id="red_input" type="text" class="form-control" placeholder="Number Of Memebers" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button id="red_btn" class="btn btn-outline-secondary" type="button">Submit</button>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-group-append">
+            <button id="number_team_red_i" class="btn btn-outline-secondary" type="button">+</button>
+            <button id="number_team_red_d" class="btn btn-outline-secondary" type="button">_</button>
+          </div>
+        </div>
+      </div>
+      <div class="container p-2 h-5">
+        <h1>Team Green</h1>
+        <div class="input-group mb-3">
+          <input id="green_input" type="text" class="form-control" placeholder="Number Of Memebers" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button id="green_btn" class="btn btn-outline-secondary" type="button">Submit</button>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-group-append">
+            <button id="number_team_green_i" class="btn btn-outline-secondary" type="button">+</button>
+            <button id="number_team_green_d" class="btn btn-outline-secondary" type="button">_</button>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-2 mb-3">
+        <h1>Timer control</h1>
+        <div class="input-group">
+          <div class="input-group mb-3">
+            <input id="start_input" type="number" class="form-control" placeholder="Round time" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button id="start_btn" class="btn btn-outline-secondary" type="button">Start</button>
+            </div>
+          </div>
+          <div class="input-group-append">
+            <button id="stop" class="btn btn-outline-secondary" type="button">Stop</button>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-2 mb-3">
+        <h1>Reset game</h1>
+        <div class="input-group">
+          <div class="input-group-append">
+            <button id="reset" class="btn btn-outline-secondary" type="button">Reset</button>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-2 mb-3">
+        <h1>Bomb Timer</h1>
+        <div class="input-group">
+          <div class="input-group mb-3">
+            <input id="bomb_input_time" type="number" class="form-control" placeholder="Round time" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button id="bomb_btn_time" class="btn btn-outline-secondary" type="button">Set</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="index.js"></script>
+    </body>
+</html>
